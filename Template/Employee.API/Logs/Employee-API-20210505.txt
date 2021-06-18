@@ -1,0 +1,121 @@
+2021-05-05T09:29:15.0336655+05:30  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T09:29:15.2300226+05:30  [INF] RabbitMQ Client acquired a persistent connection to '"localhost"' and is subscribed to failure events (58d9a719)
+2021-05-05T09:29:15.2867277+05:30  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T09:29:15.3132142+05:30  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)
+2021-05-05T09:29:35.6163764+05:30 80000083-0006-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Upscript.Services.Employee.API.Infrastructure.BusnessLogic.ServiceImplementation.EmployeeService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Upscript.Services.Employee.API.Infrastructure.BusnessLogic.ServiceImplementation.EmployeeService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Employee.API.IntegrationEvents.IEmployeeIntegrationEventService employeeIntegrationEventService' of constructor 'Void .ctor(UpScript.Services.Employee.API.Infrastructure.EmployeeContext, Microsoft.Extensions.Options.IOptionsSnapshot`1[Upscript.Services.Employee.API.EmployeeSettings], EventBus.Abstractions.IEventBus, System.Func`2[System.Data.Common.DbConnection,IntegrationEventLogEF.Services.IIntegrationEventLogService], Employee.API.IntegrationEvents.IEmployeeIntegrationEventService)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetAllBindings(ConstructorBinder[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<ConfigurePipeline>b__11_0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method354(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-05T09:30:46.4811434+05:30  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T09:30:46.7117326+05:30  [INF] RabbitMQ Client acquired a persistent connection to '"localhost"' and is subscribed to failure events (58d9a719)
+2021-05-05T09:30:46.7721641+05:30  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T09:30:46.7931017+05:30  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)
+2021-05-05T09:31:13.0133932+05:30 80000063-0000-ff00-b63f-84710c7967bb [INF] ----- EmployeeIntegrationEventService - Saving changes and integrationEvent: 95131ed9-b659-44a2-bbbf-dc7d0ff664d6 (a8eebbe9)
+2021-05-05T09:31:27.1587951+05:30 80000063-0000-ff00-b63f-84710c7967bb [ERR] Error is occured due to Message: The specified transaction is not associated with the current connection. Only transactions associated with the current connection may be used., Inner Exception: , StackTrace:    at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction..ctor(IRelationalConnection connection, DbTransaction transaction, Guid transactionId, IDiagnosticsLogger`1 logger, Boolean transactionOwned)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransactionFactory.Create(IRelationalConnection connection, DbTransaction transaction, Guid transactionId, IDiagnosticsLogger`1 logger, Boolean transactionOwned)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.CreateRelationalTransaction(DbTransaction transaction, Guid transactionId, Boolean transactionOwned)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.UseTransaction(DbTransaction transaction, Guid transactionId)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.UseTransaction(DatabaseFacade databaseFacade, DbTransaction transaction, Guid transactionId)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.UseTransaction(DatabaseFacade databaseFacade, DbTransaction transaction)
+   at IntegrationEventLogEF.Services.IntegrationEventLogService.SaveEventAsync(IntegrationEvent event, IDbContextTransaction transaction) in C:\Project\Microservices\Microservices\IntegrationEventLogEF\Services\IntegrationEventLogService.cs:line 58
+   at Employee.API.IntegrationEvents.EmployeeIntegrationEventService.<>c__DisplayClass8_0.<<SaveEventAndEmployeeContextChangesAsync>b__0>d.MoveNext() in C:\Project\Microservices\Microservices\Template\Employee.API\Infrastructure\IntegrationEvents\EmployeeIntegrationEventService.cs:line 62
+--- End of stack trace from previous location ---
+   at IntegrationEventLogEF.Utilities.ResilientTransaction.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Project\Microservices\Microservices\IntegrationEventLogEF\Utilities\ResilientTransaction.cs:line 25
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at IntegrationEventLogEF.Utilities.ResilientTransaction.ExecuteAsync(Func`1 action) in C:\Project\Microservices\Microservices\IntegrationEventLogEF\Utilities\ResilientTransaction.cs:line 21
+   at Employee.API.IntegrationEvents.EmployeeIntegrationEventService.SaveEventAndEmployeeContextChangesAsync(IntegrationEvent evt) in C:\Project\Microservices\Microservices\Template\Employee.API\Infrastructure\IntegrationEvents\EmployeeIntegrationEventService.cs:line 58
+   at Upscript.Services.Employee.API.Infrastructure.BusnessLogic.ServiceImplementation.EmployeeService.CreateEmployeeAsync(Employees employee) in C:\Project\Microservices\Microservices\Template\Employee.API\Infrastructure\BusnessLogic\ServiceImplementation\EmployeeService.cs:line 124
+   at Upscript.Services.Employee.API.Controllers.EmployeeController.CreateEmployeeAsync(Employees employee) in C:\Project\Microservices\Microservices\Template\Employee.API\Controllers\EmployeeController.cs:line 167 (fb6344ba)
+2021-05-05T09:32:48.2456119+05:30 80000085-0006-fe00-b63f-84710c7967bb [INF] ----- EmployeeIntegrationEventService - Saving changes and integrationEvent: a1144153-bbdd-42fd-b91e-15bd85490f84 (a8eebbe9)
+2021-05-05T09:33:01.6068101+05:30 80000085-0006-fe00-b63f-84710c7967bb [ERR] Error is occured due to Message: The specified transaction is not associated with the current connection. Only transactions associated with the current connection may be used., Inner Exception: , StackTrace:    at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction..ctor(IRelationalConnection connection, DbTransaction transaction, Guid transactionId, IDiagnosticsLogger`1 logger, Boolean transactionOwned)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransactionFactory.Create(IRelationalConnection connection, DbTransaction transaction, Guid transactionId, IDiagnosticsLogger`1 logger, Boolean transactionOwned)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.CreateRelationalTransaction(DbTransaction transaction, Guid transactionId, Boolean transactionOwned)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.UseTransaction(DbTransaction transaction, Guid transactionId)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.UseTransaction(DatabaseFacade databaseFacade, DbTransaction transaction, Guid transactionId)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.UseTransaction(DatabaseFacade databaseFacade, DbTransaction transaction)
+   at IntegrationEventLogEF.Services.IntegrationEventLogService.SaveEventAsync(IntegrationEvent event, IDbContextTransaction transaction) in C:\Project\Microservices\Microservices\IntegrationEventLogEF\Services\IntegrationEventLogService.cs:line 58
+   at Employee.API.IntegrationEvents.EmployeeIntegrationEventService.<>c__DisplayClass8_0.<<SaveEventAndEmployeeContextChangesAsync>b__0>d.MoveNext() in C:\Project\Microservices\Microservices\Template\Employee.API\Infrastructure\IntegrationEvents\EmployeeIntegrationEventService.cs:line 62
+--- End of stack trace from previous location ---
+   at IntegrationEventLogEF.Utilities.ResilientTransaction.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Project\Microservices\Microservices\IntegrationEventLogEF\Utilities\ResilientTransaction.cs:line 25
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at IntegrationEventLogEF.Utilities.ResilientTransaction.ExecuteAsync(Func`1 action) in C:\Project\Microservices\Microservices\IntegrationEventLogEF\Utilities\ResilientTransaction.cs:line 21
+   at Employee.API.IntegrationEvents.EmployeeIntegrationEventService.SaveEventAndEmployeeContextChangesAsync(IntegrationEvent evt) in C:\Project\Microservices\Microservices\Template\Employee.API\Infrastructure\IntegrationEvents\EmployeeIntegrationEventService.cs:line 58
+   at Upscript.Services.Employee.API.Infrastructure.BusnessLogic.ServiceImplementation.EmployeeService.CreateEmployeeAsync(Employees employee) in C:\Project\Microservices\Microservices\Template\Employee.API\Infrastructure\BusnessLogic\ServiceImplementation\EmployeeService.cs:line 124
+   at Upscript.Services.Employee.API.Controllers.EmployeeController.CreateEmployeeAsync(Employees employee) in C:\Project\Microservices\Microservices\Template\Employee.API\Controllers\EmployeeController.cs:line 167 (fb6344ba)
+2021-05-05T09:34:18.5191557+05:30 8000000a-0007-fc00-b63f-84710c7967bb [INF] ----- EmployeeIntegrationEventService - Saving changes and integrationEvent: 89600489-caee-4ae7-9f44-ecf1c6ed4831 (a8eebbe9)
+2021-05-05T10:16:31.8517496+05:30  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T10:16:32.0535584+05:30  [INF] RabbitMQ Client acquired a persistent connection to '"localhost"' and is subscribed to failure events (58d9a719)
+2021-05-05T10:16:32.1140643+05:30  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T10:16:32.1354438+05:30  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)
+2021-05-05T10:36:50.0879687+05:30  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T10:36:51.4860605+05:30  [INF] RabbitMQ Client acquired a persistent connection to '"localhost"' and is subscribed to failure events (58d9a719)
+2021-05-05T10:36:51.5310252+05:30  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T10:36:51.5524919+05:30  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)
+2021-05-05T10:37:37.4713316+05:30 80000002-0005-fd00-b63f-84710c7967bb [INF] ----- EmployeeIntegrationEventService - Saving changes and integrationEvent: 8e7204b3-34a1-40f1-b2ba-b55a5ac8e3b1 (a8eebbe9)
+2021-05-05T10:38:00.9642171+05:30 80000002-0005-fd00-b63f-84710c7967bb [INF] ----- Publishing integration event: 8e7204b3-34a1-40f1-b2ba-b55a5ac8e3b1 from (EmployeeCreatedEvent { EmployeeId: 1, EmployeeName: "Test", Description: "string", Email: "string", Id: 8e7204b3-34a1-40f1-b2ba-b55a5ac8e3b1, CreationDate: 05/05/2021 05:07:32 }) (244e4ebf)
+2021-05-05T10:39:42.7718718+05:30  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T10:39:42.9294603+05:30  [INF] RabbitMQ Client acquired a persistent connection to '"localhost"' and is subscribed to failure events (58d9a719)
+2021-05-05T10:39:42.9682201+05:30  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T10:39:42.9883774+05:30  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)
+2021-05-05T10:39:58.2182312+05:30 80000007-0002-ff00-b63f-84710c7967bb [INF] ----- EmployeeIntegrationEventService - Saving changes and integrationEvent: 9c1ca1e0-b706-4e6e-91db-0254aba8cd45 (a8eebbe9)
+2021-05-05T10:39:58.6716483+05:30 80000007-0002-ff00-b63f-84710c7967bb [INF] ----- Publishing integration event: 9c1ca1e0-b706-4e6e-91db-0254aba8cd45 from (EmployeeCreatedEvent { EmployeeId: 2, EmployeeName: "Ram", Description: "string", Email: "string", Id: 9c1ca1e0-b706-4e6e-91db-0254aba8cd45, CreationDate: 05/05/2021 05:09:58 }) (244e4ebf)
+2021-05-05T10:40:21.4268206+05:30  [INF] Message: Employee has been saved successfully (07af616f)
+2021-05-05T11:00:19.8955344+05:30  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T11:00:20.0489445+05:30  [INF] RabbitMQ Client acquired a persistent connection to '"localhost"' and is subscribed to failure events (58d9a719)
+2021-05-05T11:00:20.0902636+05:30  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T11:00:20.1061049+05:30  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)
+2021-05-05T11:09:48.3600997+05:30  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T11:09:48.4950076+05:30  [INF] RabbitMQ Client acquired a persistent connection to '"localhost"' and is subscribed to failure events (58d9a719)
+2021-05-05T11:09:48.5323738+05:30  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T11:09:48.5531294+05:30  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)
+2021-05-05T11:10:01.0961166+05:30 8000000a-0003-fd00-b63f-84710c7967bb [INF] ids value invalid. Must be comma-separated list of numbers (13b0f4bf)
+2021-05-05T11:18:48.1087886+05:30  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T11:18:48.2548392+05:30  [INF] RabbitMQ Client acquired a persistent connection to '"localhost"' and is subscribed to failure events (58d9a719)
+2021-05-05T11:18:48.2965302+05:30  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T11:18:48.3155501+05:30  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)
+2021-05-05T06:51:37.8018834+00:00  [INF] RabbitMQ Client is trying to connect (169f1121)
+2021-05-05T06:51:38.0977304+00:00  [INF] RabbitMQ Client acquired a persistent connection to '"rabbitmq"' and is subscribed to failure events (58d9a719)
+2021-05-05T06:51:38.1742756+00:00  [INF] Subscribing to event "EmployeeCreatedSuccessfullyEvent" with "IIntegrationEventHandler<EmployeeCreatedSuccessfullyEvent>" (aa863f64)
+2021-05-05T06:51:38.2117794+00:00  [INF] Subscribing to event "EmployeeCreatedFailedEvent" with "IIntegrationEventHandler<EmployeeCreatedFailedEvent>" (aa863f64)

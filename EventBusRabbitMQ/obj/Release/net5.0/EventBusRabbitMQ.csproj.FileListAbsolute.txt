@@ -1,0 +1,15 @@
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\bin\Release\net5.0\EventBusRabbitMQ.deps.json
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\bin\Release\net5.0\EventBusRabbitMQ.dll
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\bin\Release\net5.0\ref\EventBusRabbitMQ.dll
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\bin\Release\net5.0\EventBusRabbitMQ.pdb
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\bin\Release\net5.0\EventBus.dll
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\bin\Release\net5.0\EventBus.pdb
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\EventBusRabbitMQ.csprojAssemblyReference.cache
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\EventBusRabbitMQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\EventBusRabbitMQ.AssemblyInfoInputs.cache
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\EventBusRabbitMQ.AssemblyInfo.cs
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\EventBusRabbitMQ.csproj.CoreCompileInputs.cache
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\EventBusRabbitMQ.csproj.CopyComplete
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\EventBusRabbitMQ.dll
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\ref\EventBusRabbitMQ.dll
+C:\Project\Microservices\Microservices\EventBusRabbitMQ\obj\Release\net5.0\EventBusRabbitMQ.pdb

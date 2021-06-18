@@ -1,0 +1,32 @@
+networks:
+  rabbitmq_go_net:
+    driver: bridge
+services:
+  employee.api:
+    build:
+      context: D:\3G\Upscript\Microservices_New\Microservices\Template
+      dockerfile: Employee.API/Dockerfile
+    depends_on:
+    - rabbitmq
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: employeeapi
+    networks:
+      rabbitmq_go_net: {}
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\hitesh.acharya\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\hitesh.acharya\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    networks:
+      rabbitmq_go_net: {}
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+version: '3.4'

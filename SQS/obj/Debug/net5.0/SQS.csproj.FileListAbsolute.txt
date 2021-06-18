@@ -1,0 +1,47 @@
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\obj\Debug\net5.0\SQS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\obj\Debug\net5.0\SQS.AssemblyInfoInputs.cache
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\obj\Debug\net5.0\SQS.AssemblyInfo.cs
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\obj\Debug\net5.0\SQS.csproj.CoreCompileInputs.cache
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\bin\Debug\net5.0\SQS.deps.json
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\bin\Debug\net5.0\SQS.dll
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\bin\Debug\net5.0\ref\SQS.dll
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\bin\Debug\net5.0\SQS.pdb
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\obj\Debug\net5.0\SQS.dll
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\obj\Debug\net5.0\ref\SQS.dll
+C:\Users\hitesh.acharya\Downloads\Microservices (1)\Microservices\SQS\obj\Debug\net5.0\SQS.pdb
+D:\3G\Upscript\RestAPI\Microservices\SQS\bin\Debug\net5.0\SQS.deps.json
+D:\3G\Upscript\RestAPI\Microservices\SQS\bin\Debug\net5.0\SQS.dll
+D:\3G\Upscript\RestAPI\Microservices\SQS\bin\Debug\net5.0\ref\SQS.dll
+D:\3G\Upscript\RestAPI\Microservices\SQS\bin\Debug\net5.0\SQS.pdb
+D:\3G\Upscript\RestAPI\Microservices\SQS\obj\Debug\net5.0\SQS.csprojAssemblyReference.cache
+D:\3G\Upscript\RestAPI\Microservices\SQS\obj\Debug\net5.0\SQS.GeneratedMSBuildEditorConfig.editorconfig
+D:\3G\Upscript\RestAPI\Microservices\SQS\obj\Debug\net5.0\SQS.AssemblyInfoInputs.cache
+D:\3G\Upscript\RestAPI\Microservices\SQS\obj\Debug\net5.0\SQS.AssemblyInfo.cs
+D:\3G\Upscript\RestAPI\Microservices\SQS\obj\Debug\net5.0\SQS.csproj.CoreCompileInputs.cache
+D:\3G\Upscript\RestAPI\Microservices\SQS\obj\Debug\net5.0\SQS.dll
+D:\3G\Upscript\RestAPI\Microservices\SQS\obj\Debug\net5.0\ref\SQS.dll
+D:\3G\Upscript\RestAPI\Microservices\SQS\obj\Debug\net5.0\SQS.pdb
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\bin\Debug\net5.0\SQS.deps.json
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\bin\Debug\net5.0\SQS.dll
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\bin\Debug\net5.0\ref\SQS.dll
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\bin\Debug\net5.0\SQS.pdb
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.csprojAssemblyReference.cache
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.AssemblyInfoInputs.cache
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.AssemblyInfo.cs
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.csproj.CoreCompileInputs.cache
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.dll
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\obj\Debug\net5.0\ref\SQS.dll
+C:\Users\harikirat.walia\Downloads\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.pdb
+D:\3G\Upscript\Microservices_New\Microservices\SQS\bin\Debug\net5.0\SQS.deps.json
+D:\3G\Upscript\Microservices_New\Microservices\SQS\bin\Debug\net5.0\SQS.dll
+D:\3G\Upscript\Microservices_New\Microservices\SQS\bin\Debug\net5.0\ref\SQS.dll
+D:\3G\Upscript\Microservices_New\Microservices\SQS\bin\Debug\net5.0\SQS.pdb
+D:\3G\Upscript\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.csprojAssemblyReference.cache
+D:\3G\Upscript\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.GeneratedMSBuildEditorConfig.editorconfig
+D:\3G\Upscript\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.AssemblyInfoInputs.cache
+D:\3G\Upscript\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.AssemblyInfo.cs
+D:\3G\Upscript\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.csproj.CoreCompileInputs.cache
+D:\3G\Upscript\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.dll
+D:\3G\Upscript\Microservices_New\Microservices\SQS\obj\Debug\net5.0\ref\SQS.dll
+D:\3G\Upscript\Microservices_New\Microservices\SQS\obj\Debug\net5.0\SQS.pdb
